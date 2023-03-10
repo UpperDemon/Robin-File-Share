@@ -14,6 +14,7 @@ from database.database import add_user, del_user, full_userbase, present_user
 
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
+@ratelimiter
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
     if not await present_user(id):
@@ -114,6 +115,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
     
     
 @Bot.on_message(filters.command('start') & filters.private)
+@ratelimiter
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
