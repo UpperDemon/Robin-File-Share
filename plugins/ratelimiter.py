@@ -27,7 +27,7 @@ class RateLimiter:
             bucket_class=MemoryListBucket,
         )
 
-    async def acquire(self, userid: Union[int, str]) -> bool
+    async def acquire(self, userid:Union[int, str]) -> bool
 
         try:
             self.limiter.try_acquire(userid)
