@@ -116,7 +116,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
     
     
 @Bot.on_message(filters.command('start') & filters.private)
-@ratelimiter
+#@ratelimiter
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
