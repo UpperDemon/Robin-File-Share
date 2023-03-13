@@ -80,9 +80,9 @@ def LOGGER(name: str) -> logging.Logger:
 
 #for request
 class Config:
-    API_ID = "11189674"
-    API_HASH = "5ae1893014f3802bb2f9da164e37c05c"
-    TG_BOT_TOKEN = "6128162225:AAHSvgQ1Foij8byHnyr9lD1obtuX-Mo-uzA"
+    API_ID = os.environ.get("APP_ID","")
+    API_HASH = os.environ.get("APP_HASH","")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
     FROM = -1001584983939
     TO = -1001833288109
     START_TEXT = """
