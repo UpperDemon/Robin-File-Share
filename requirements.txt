@@ -8,3 +8,5 @@ dnspython
 # --- For-Web-Response ------- #
 aiohttp
 pyrate_limiter
+#for request
+asyncio
