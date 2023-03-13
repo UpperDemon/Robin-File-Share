@@ -7,6 +7,8 @@ from pyrogram.types import (
 )
 import asyncio
 
+from config import Config
+
 from bot import Bot as bot
 
 auth = [1930212388]
