@@ -1,13 +1,6 @@
-#(©)CodeXBotz
-
-
-
-
 import os
 import logging
 from logging.handlers import RotatingFileHandler
-
-
 
 #Bot token @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
@@ -54,6 +47,43 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
+#for request
+START_TEXT = """
+
+**Hey there,**
+➪ I am a ReqCollector Bot.
+➪ I Collect Rquests for @Uncensored_Hanimes.
+➪ If You Want To Know How to Request then do /help.
+Have Fun🥰
+"""
+    HELP_TEXT = """
+Looks Like you need help!
+Use me like this:-
+
+    `/request` **For Requesting Anime**
+    `/report` **For Reporting Broken Channel Links**
+
+**NOTE: **
+1. Please check the channel before requesting.
+2. These commands only work in the group.
+"""
+    REQUEST_TEXT = """
+🔸 Your request has been submitted!
+🔸 It will be uploaded within 48 hours.
+🔸 May be a little late if admins are busy.
+🔸 Have Fun till then by watching other anime in our Channel @Uncensored_hanimes.
+"""
+    REPORT_TEXT = """
+Your report has been submitted!
+It will be reestablished within 48 hours.
+May be a little late if admins are busy.
+Have Fun till then by watching other 
+Hanimes in our channel @Uncensored_hanimes.
+"""
+    NO_COLLECT = """
+🔸 We have stopped taking requests for some time!!! 😞
+"""
+
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
@@ -61,7 +91,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1250450587)
+ADMINS.append(5617654291)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
