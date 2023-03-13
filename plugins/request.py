@@ -6,15 +6,8 @@ from pyrogram.types import (
     InlineKeyboardButton,
 )
 import asyncio
-from Config import Config
 
-
-bot = Client(
-    "BoaHancockRobot",
-    api_id=Config.API_ID,
-    api_hash=Config.API_HASH,
-    bot_token=Config.TG_BOT_TOKEN,
-)
+from bot import Bot as bot
 
 auth = [1930212388]
 request_collection_status = False
@@ -403,4 +396,3 @@ async def delete_her(message):
         pass
 
 
-bot.run()
