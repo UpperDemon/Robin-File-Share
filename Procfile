@@ -1,2 +1,2 @@
 worker: python3 main.py
-worker: python3 plugins/bot.py
+worker: python3 plugins/request.py
