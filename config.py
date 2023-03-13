@@ -79,6 +79,7 @@ def LOGGER(name: str) -> logging.Logger:
 
 
 #for request
+class Config:
 FROM = -1001584983939
 TO = -1001945047718
 START_TEXT = """
