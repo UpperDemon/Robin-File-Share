@@ -67,7 +67,6 @@ def add(b: Client, message: Message):
     filters.command(["collect_stop", "collect_stop@BoaHancockRobot"], ["/"])
 
     & ~filters.private
-    & ~filters.edited
     & ~filters.forwarded
 )
 async def stop_request_collection(b: Client, message: Message):
@@ -84,7 +83,6 @@ async def stop_request_collection(b: Client, message: Message):
 @bot.on_message(
     filters.command(["collect_start", "collect_start@BoaHancockRobot"], ["/"])
     & ~filters.private
-    & ~filters.edited
     & ~filters.forwarded
 )
 async def stop_request_collection(b: Client, message: Message):
@@ -107,7 +105,6 @@ async def stop_request_collection(b: Client, message: Message):
         ["/", "#"],
     )
     & ~filters.private
-    & ~filters.edited
     & ~filters.forwarded
 )
 async def request(b: Client, message: Message):
@@ -191,7 +188,6 @@ async def request(b: Client, message: Message):
         ["/", "#"],
     )
     & ~filters.private
-    & ~filters.edited
     & ~filters.forwarded
 )
 async def report(b: Client, message: Message):
