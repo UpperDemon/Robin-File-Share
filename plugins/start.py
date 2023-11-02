@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
 from plugins import ratelimiter
 from bot import Bot
-from config import ADMINS, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT
+from config import ADMINS, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT, START-IMG
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
@@ -91,7 +91,7 @@ async def start_command(client: Client, message: Message):
             ]
         )
         await message.reply_photo(
-            photo = "https://telegra.ph/file/a2050858d8538d4c6daba.jpg",
+            photo = START_IMG,
             caption = START_MSG.format(
                 first = message.from_user.first_name,
                 last = message.from_user.last_name,
