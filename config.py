@@ -17,7 +17,7 @@ API_HASH = os.environ.get("API_HASH", "")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
 #Start Image
-START_IMG = "https://telegra.ph/file/96f14d44c4369420bd9dd.jpg"
+START_IMG = "https://telegra.ph/file/471f52883ee4f87a208e6.jpg"
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", ""))
